@@ -160,6 +160,7 @@ public class DlgSalasActividad extends JDialog implements ActionListener, KeyLis
                                     leerNumfila(),
                                     leerNumbutaca());
 			Proyecto.as.adicionar(nuevo);
+			Proyecto.as.grabarSala();
 			Lib.mensajeInformacion(this, "La Sala ha sido adicionada");
 		}else {
 			Sala x = Proyecto.as.buscar(leerCodigoSala());

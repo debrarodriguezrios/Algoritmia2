@@ -227,6 +227,7 @@ public class DlgCinesActividad extends JDialog implements ActionListener, KeyLis
 			                                                leerDistrito(),
 			                                                leerFechainicio(),leerTipocine());
 								Proyecto.aci.adicionar(nuevo);
+								Proyecto.aci.grabarCine();
 								Lib.mensajeInformacion(this, "El Cine ha sido adicionado");
 							}
 							else {

@@ -54,7 +54,7 @@ public class ArregloCines extends AbstractTableModel{
 			String linea, nombre, departamento, provincia, distrito, fechainicio;
 			String[] s;
 			int codigocine, tipocine;
-			br = new BufferedReader(new FileReader("cine.txt"));
+			br = new BufferedReader(new FileReader("cines.txt"));
 			while ((linea = br.readLine()) != null) {
 				s = linea.split(";");
 				codigocine = Integer.parseInt(s[0].trim());
@@ -70,6 +70,7 @@ public class ArregloCines extends AbstractTableModel{
 			br.close();
 		}		
 		catch (Exception e) {
+			e.printStackTrace();
 		}
 	}	
 	
