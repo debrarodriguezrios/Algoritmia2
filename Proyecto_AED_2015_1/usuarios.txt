@@ -1,0 +1,14 @@
+10001;Maria Socorro;Perez Torres;0;42659863;0;Msocorro@hotmail.com;990398847;20150113;0
+10002;Luis Edgardo;Pinto Tipismana;0;23456789;2;lpinto@hotmail.com;949490457;20150127;1
+10003;Lizbeth Edith;Castilla Sácnhez;0;43544289;0;lizbeth.edith@hotmail.com;949490457;20150206;0
+10004;Luis Miguel;Lopez Peña;1;56487694;1;llpoez@hotmail.com;990380839;20150311;1
+10005;Ingrid Cinthia;Miranda Salcedo;1;42748529;2;imiranda@hotmail.com;894653783;20150418;1
+10006;Jairo Carlos;Macedo Chevarria;2;26385497;2;jmacedo@hotmail.com;453824961;20150502;0
+10007;Brayan Antonio;Torres Perez;2;35648764;4;btorres@hotmail.com;748639272;20150623;1
+10008;Evelin Maritza;Pinto Tipismana;2;35428754;4;epinto@hotmail.com;846378298;20150701;1
+10009;Enzo Manuel;Morales Bermudes;3;54328765;2;emorales@hotmail.com;956478398;20150825;1
+10010;Ricardo Edson;Montes Moran;4;43589765;3;rmontes@hotmail.com;765439872;20150830;0
+10011;Jesus Ricardo;Rodriguez Mendoza;4;53674963;0;jrodriguez@hotmail.com;864327529;20150903;0
+10012;Jesusa Irma;Veramendi Ortega;2;43569719;3;jveramendi@hotmail.com;764394279;20150912;0
+10013;Gian Carlos;Macedo Chavarria;0;47810338;4;sgcmacedo@live.com;983266636;20150923;0
+10014;Alberto Segundo;Armendariz Sanchez;1;37648297;3;aArmendariz@hotmail.com;367896432;20151006;1
