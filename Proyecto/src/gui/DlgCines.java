@@ -15,6 +15,8 @@ import javax.swing.ListSelectionModel;
 import javax.swing.UIManager;
 import javax.swing.table.TableColumnModel;
 
+import arreglos.ArregloCines;
+
 import java.awt.event.WindowListener;
 import java.awt.event.WindowEvent;
 import java.awt.Font;
@@ -61,6 +63,8 @@ public class DlgCines extends JDialog implements ActionListener, WindowListener 
 	 * Create the dialog.
 	 */
 	public DlgCines() {
+		Proyecto.aci = new ArregloCines();
+		
 		addWindowListener(this);
 		setResizable(false);
 		setTitle("Mantenimiento | Cines");
@@ -113,7 +117,7 @@ public class DlgCines extends JDialog implements ActionListener, WindowListener 
 		
 		tblCines.getSelectionModel().setSelectionInterval(0, 0);
 		ajustarAnchoColumnas();	
-
+		
 
 	}
 	
