@@ -139,20 +139,18 @@ public class DlgClientesActividad extends JDialog implements ActionListener, Key
 		
 		cboNacDia = new JComboBox <String> ();
 		Fecha.colocarItems(cboNacDia,1,31);
-		Fecha.colocarDiaActual(cboNacDia);
 		cboNacDia.addActionListener(this);
 		cboNacDia.setBounds(182, 186, 40, 23);
 		getContentPane().add(cboNacDia);
 		
 		cboNacMes = new JComboBox <String> ();
 		Fecha.colocarMeses(cboNacMes);
-		Fecha.colocarMesActual(cboNacMes);
 		cboNacMes.addActionListener(this);
 		cboNacMes.setBounds(234, 186, 90, 23);
 		getContentPane().add(cboNacMes);
 		
 		cboNacAño = new JComboBox <String> ();
-		Fecha.colocarItems(cboNacAño,Fecha.añoActual(),2000);
+		Fecha.colocarItems(cboNacAño,Fecha.añoActual(),1920);
 		cboNacAño.addActionListener(this);
 		cboNacAño.setBounds(336, 186, 60, 23);
 		getContentPane().add(cboNacAño);
@@ -589,16 +587,15 @@ public class DlgClientesActividad extends JDialog implements ActionListener, Key
 	}
 	
 	protected void keyTypedTxtDireccion(KeyEvent e) {
-		Lib.soloLetras(e,txtDireccion,20);
 
 	}
 	
 	protected void keyTypedTxtTelefono(KeyEvent e) {
-		Lib.soloLetras(e,txtTelefono,20);
+		Lib.soloNumeros(e,txtTelefono,20);
 
 	}
 	protected void keyTypedTxtDni(KeyEvent e) {
-		Lib.soloLetras(e,txtDni,20);
+		Lib.soloNumeros(e,txtDni,20);
 
 	}
 	

@@ -18,6 +18,8 @@ import javax.swing.ListSelectionModel;
 import javax.swing.UIManager;
 import javax.swing.table.TableColumnModel;
 
+import libreria.Lib;
+
 import java.awt.event.WindowListener;
 import java.awt.event.WindowEvent;
 import java.awt.Font;
@@ -86,31 +88,31 @@ public class DlgEmpleados extends JDialog implements ActionListener, WindowListe
 				
 		btnIngreso = new JButton("Ingreso");
 		btnIngreso.addActionListener(this);
-		btnIngreso.setFont(new Font("Comic Sans MS", Font.PLAIN, 30));
+		btnIngreso.setFont(new Font("Arial Black", Font.PLAIN, 30));
 		btnIngreso.setBounds(-7, 41, 267, 105);
 		getContentPane().add(btnIngreso);
 		
 		btnModificacion = new JButton("Modificaci\u00F3n");
 		btnModificacion.addActionListener(this);
-		btnModificacion.setFont(new Font("Comic Sans MS", Font.PLAIN, 30));
+		btnModificacion.setFont(new Font("Arial Black", Font.PLAIN, 30));
 		btnModificacion.setBounds(513, 41, 267, 105);
 		getContentPane().add(btnModificacion);
 		
 		btnEliminacion = new JButton("Eliminaci\u00F3n");
 		btnEliminacion.addActionListener(this);
-		btnEliminacion.setFont(new Font("Comic Sans MS", Font.PLAIN, 30));
+		btnEliminacion.setFont(new Font("Arial Black", Font.PLAIN, 30));
 		btnEliminacion.setBounds(773, 41, 267, 105);
 		getContentPane().add(btnEliminacion);
 		
 		btnSalir = new JButton("Salir");
 		btnSalir.addActionListener(this);
-		btnSalir.setFont(new Font("Comic Sans MS", Font.PLAIN, 30));
+		btnSalir.setFont(new Font("Arial Black", Font.PLAIN, 30));
 		btnSalir.setBounds(1033, 41, 267, 105);
 		getContentPane().add(btnSalir);
 		
 		btnConsulta = new JButton("Consulta");
 		btnConsulta.addActionListener(this);
-		btnConsulta.setFont(new Font("Comic Sans MS", Font.PLAIN, 30));
+		btnConsulta.setFont(new Font("Arial Black", Font.PLAIN, 30));
 		btnConsulta.setBounds(253, 41, 267, 105);
 		getContentPane().add(btnConsulta);
 		
@@ -191,9 +193,15 @@ public class DlgEmpleados extends JDialog implements ActionListener, WindowListe
 		dea.setTitle(this.getTitle() + " | " + obtenerTitulo());
 		dea.configurarFormulario();
 		dea.setLocationRelativeTo(this);
-		if (tipoOperacion != 0)
-			dea.cargarEmpleado(Proyecto.ae.obtener(tblEmpleados.getSelectedRow()));
-		dea.setVisible(true);
+		
+		if(tipoOperacion > 0 && Proyecto.ae.tamaño()==0){
+			Lib.mensajeError(this, "No existen clientes");
+		}else{
+			if(tipoOperacion > 0){
+				dea.cargarEmpleado(Proyecto.ae.obtener(tblEmpleados.getSelectedRow()));
+			}
+			dea.setVisible(true);
+		}
 	}
 	
 	public void windowActivated(WindowEvent e) {  //////////////ver

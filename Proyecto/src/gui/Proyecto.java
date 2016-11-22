@@ -40,6 +40,9 @@ public class Proyecto extends JFrame implements ActionListener {
 	private JMenuItem mntmSalas;
 	private JMenuItem mntmPelculas;
 	private JMenuItem mntmFunciones;
+	private JMenu mnRegistroReserva;
+	private JMenu mnControlPago;
+	private JMenu mnReportes;
 	
 	public static ArregloEmpleados ae = new ArregloEmpleados();
 	public static ArregloClientes ac = new ArregloClientes();
@@ -112,6 +115,15 @@ public class Proyecto extends JFrame implements ActionListener {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		mnRegistroReserva = new JMenu("Registro de Reserva");
+		menuProyecto.add(mnRegistroReserva);
+		
+		mnControlPago = new JMenu("Control de Pago");
+		menuProyecto.add(mnControlPago);
+		
+		mnReportes = new JMenu("Reportes");
+		menuProyecto.add(mnReportes);
 		
 		lblImagen = new JLabel("");
 		lblImagen.setIcon(new ImageIcon("C:\\Users\\AGAF\\Desktop\\CIBERTEC\\SEGUNDO CICLO\\1814 - ALGORITMOS Y ESTRUCTURA DE DATOS\\Proyecto_Sistema_Atencion_Cine\\Proyecto\\imagenes\\Cinema.jpg"));
