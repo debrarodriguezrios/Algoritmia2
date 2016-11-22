@@ -195,7 +195,7 @@ public class DlgCines extends JDialog implements ActionListener, WindowListener 
 		dea.setLocationRelativeTo(this);
 		
 		if(tipoOperacion > 0 && Proyecto.aci.tamaño()==0){
-			Lib.mensajeError(this, "No existen clientes");
+			Lib.mensajeError(this, "No existen cines");
 		}else{
 			if(tipoOperacion > 0){
 				dea.cargarCine(Proyecto.aci.obtener(tblCines.getSelectedRow()));

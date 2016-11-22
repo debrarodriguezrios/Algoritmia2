@@ -195,7 +195,7 @@ public class DlgEmpleados extends JDialog implements ActionListener, WindowListe
 		dea.setLocationRelativeTo(this);
 		
 		if(tipoOperacion > 0 && Proyecto.ae.tamaño()==0){
-			Lib.mensajeError(this, "No existen clientes");
+			Lib.mensajeError(this, "No existen empleados");
 		}else{
 			if(tipoOperacion > 0){
 				dea.cargarEmpleado(Proyecto.ae.obtener(tblEmpleados.getSelectedRow()));

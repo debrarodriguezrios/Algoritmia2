@@ -1,0 +1,6 @@
+10001;Debra;Rodriguez;Rios;0;debrod;debrod;
+10002;Giancarlo;Aguirre;Fonseca;0;giaagu;giaagu;
+10003;Julio;Hernandez;Ascues;0;julher;julher;
+10004;Diego;Vinces;Miñano;0;dievin;dievin;
+10005;Luis;Soto;Perez;1;luisot;luisot;
+10006;Susana;Sanchez;Carrasco;2;sussan;sussan;

@@ -191,7 +191,7 @@ public class DlgSalas extends JDialog implements ActionListener, WindowListener 
 		dea.setLocationRelativeTo(this);
 		
 		if(tipoOperacion > 0 && Proyecto.as.tamaño()==0){
-			Lib.mensajeError(this, "No existen clientes");
+			Lib.mensajeError(this, "No existen salas");
 		}else{
 			if(tipoOperacion > 0){
 				dea.cargarSala(Proyecto.as.obtener(tblSalas.getSelectedRow()));
