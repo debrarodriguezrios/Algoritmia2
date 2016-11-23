@@ -3,7 +3,7 @@ import clases.Sala;
 
 
 
-import libreria.*;
+
 
 import java.io.*;
 import java.util.ArrayList;
@@ -120,14 +120,9 @@ public class ArregloSalas extends AbstractTableModel{
 		switch (columna) {
 			case 0:
 				return x.getCodigosala();
-			case 1:
-				return x.getCodigocine();
-			case 2:
-				return Lib.numSala[x.getNumsala()];
-			case 3:
-				return Lib.numFila[x.getNumfila()];
 			default:
-				return Lib.numButaca[x.getNumbutaca()];
+				return x.getCodigocine();
+			
 			
 		}
 	}

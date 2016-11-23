@@ -18,8 +18,8 @@ public class Cine {
 			}
 			
 			//Métodos de Acceso Público: Set/Get
-			public void setCodigoCine (int codigoempleado){
-				this.codigocine = codigoempleado;
+			public void setCodigoCine (int codigocine){
+				this.codigocine = codigocine;
 			}
 			public void setNombre (String nombre){
 				this.nombre = nombre;

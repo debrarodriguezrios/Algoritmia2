@@ -25,14 +25,11 @@ public class Lib {
 	public static String tiposDeEmpleado[] = { "Administrador", "Supervisor", "Cajero", "Carné" };
 	public static String tiposDeEstadocivil[] = { "Soltero", "Casado", "Viudo", "Divorciado" };
 	public static String tiposDeCine[] = { "Standar", "Prime" };
-	public static int numSala[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-	public static int numFila[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-			22, 23, 24, 25};
-	public static int numButaca[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20
-			
+	public static String estadoDeButaca[] = { "Reservada", "Disponible" };
+	public static String tipoDeProyeccion[] = { "Estreno", "Fuera de Estreno" };
+	public static String tipoDeCensura[] = { "Apta para todos", "Mayores de 14 años","Mayores de 18 años" };
+	public static String estadoDeProyeccion[] = { "En Cartelera", "Fuera de Cartelera" };
 	
-	
-	};
 	
 	//  Métodos static tipo void con parámetros
 	public static void mensajeError(JDialog jd, String s) {

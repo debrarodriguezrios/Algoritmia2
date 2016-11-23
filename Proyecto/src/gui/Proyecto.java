@@ -14,6 +14,8 @@ import arreglos.ArregloEmpleados;
 import arreglos.ArregloClientes;
 import arreglos.ArregloCines;
 import arreglos.ArregloSalas;
+import arreglos.ArregloButacas;
+import arreglos.ArregloPeliculas;
 
 import java.awt.Toolkit;
 import javax.swing.JMenuBar;
@@ -38,7 +40,7 @@ public class Proyecto extends JFrame implements ActionListener {
 	private JMenuItem mntmClientes;
 	private JMenuItem mntmCines;
 	private JMenuItem mntmSalas;
-	private JMenuItem mntmPelculas;
+	private JMenuItem mntmPeliculas;
 	private JMenuItem mntmFunciones;
 	private JMenu mnRegistroReserva;
 	private JMenu mnControlPago;
@@ -48,6 +50,8 @@ public class Proyecto extends JFrame implements ActionListener {
 	public static ArregloClientes ac = new ArregloClientes();
 	public static ArregloCines aci = new ArregloCines();
 	public static ArregloSalas as = new ArregloSalas();
+	public static ArregloButacas ab = new ArregloButacas();
+	public static ArregloPeliculas ap = new ArregloPeliculas();
 
 	/**
 	 * Launch the application.
@@ -104,9 +108,9 @@ public class Proyecto extends JFrame implements ActionListener {
 		mntmSalas.addActionListener(this);
 		mnMantenimiento.add(mntmSalas);
 		
-		mntmPelculas = new JMenuItem("Pel\u00EDculas");
-		mntmPelculas.addActionListener(this);
-		mnMantenimiento.add(mntmPelculas);
+		mntmPeliculas = new JMenuItem("Pel\u00EDculas");
+		mntmPeliculas.addActionListener(this);
+		mnMantenimiento.add(mntmPeliculas);
 		
 		mntmFunciones = new JMenuItem("Funciones");
 		mntmFunciones.addActionListener(this);
@@ -139,6 +143,8 @@ public class Proyecto extends JFrame implements ActionListener {
 			actionPerformedMntmClientes(arg0);
 		}else if (arg0.getSource() == mntmSalas) {
 			actionPerformedMntmSalas(arg0);
+		}else if (arg0.getSource() == mntmPeliculas) {
+			actionPerformedMntmPeliculas(arg0);
 		}else if (arg0.getSource() == mntmSalir) {
 			actionPerformedMntmSalir(arg0);
 		}
@@ -178,4 +184,12 @@ public class Proyecto extends JFrame implements ActionListener {
 				ds.setLocationRelativeTo(this);
 				ds.setVisible(true);
 		}
+	
+	//GUI'S PELICULAS
+		
+		protected void actionPerformedMntmPeliculas(ActionEvent arg0) {
+				DlgPeliculas dp = new DlgPeliculas();
+				dp.setLocationRelativeTo(this);
+				dp.setVisible(true);
+				}
 }
